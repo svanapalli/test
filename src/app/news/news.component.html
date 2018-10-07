@@ -1,0 +1,21 @@
+<div class="col-md-6 main news-class">
+<div *ngFor="let News of news">
+<div class="jumbotron">
+<span class="pull-right"><img [src]="News.img" class="img-class rounded"></span>
+ <p>{{News.key}}</p>
+ <p>{{News.news}}</p>
+ <ngb-accordion [closeOthers]="true">   
+ <ngb-panel title="ViewMore">
+        <ng-template ngbPanelContent>
+        {{News.moreData}}
+        </ng-template>
+      </ngb-panel>
+ </ngb-accordion>
+ 
+</div>
+</div>
+ 
+</div>
+
+
+
